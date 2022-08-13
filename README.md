@@ -52,7 +52,7 @@ episodes, which as you can see from the graph above, is not
 enough to solve the Lunar Lander. I did not tune until
 solving simply due to time constraints.
 
-![Gamma](Gamma_Tuning.PNG)
+![Gamma](Gamma_Tuning.png)
 
 The general trend from the graph above
 is observed across all three values of γ. From episode 20-
@@ -80,7 +80,7 @@ a solution, but can also be stuck at a local minima and be
 extremely slow. Large steps can overcome local minima, but
 can also overestimate steps and led to diverging results. With the optimal discount rate, I approached the exploration of the learning way in a similar way.
 
-![Alpha](Alpha_Tuning.PNG)
+![Alpha](Alpha_Tuning.png)
 
 The results of my learning rate tuning are fairly intuitive - a value of of α = 0.01 proved to be too large and
 produced diverging results towards the 250th episode. The
@@ -107,7 +107,7 @@ epsilon exponentially, using a decay rate. This will ensure that
 I do more exploration at first, and as time goes on, more
 exploitation.
 
-![Epsilon](Epsilon_Tuning.PNG)
+![Epsilon](Epsilon_Tuning.png)
 
 I can clearly see that too small of a decay produces far
 worst results in the early stages - this is simply a result of my
@@ -129,7 +129,7 @@ decay = 0.99. In the graph below, I have plot the average
 score of the last 100 episodes, as I trained the agent over
 500 episodes
 
-![TrainAvgScore](TrainAvgScore.PNG)
+![TrainAvgScore](TrainAvgScore.png)
 
 Around the 450th episode, my have
 by definition, solved the Lunar Lander. Perhaps one of the
@@ -160,7 +160,7 @@ better understand these variations, let’s take a look at the raw
 score per episode, rather than the moving average over the last
 100.
 
-![TrainRawScore](TrainRawScore.PNG)
+![TrainRawScore](TrainRawScore.png)
 
 In the figure above, my agent starts off
 performing poorly in the first 150 episodes or so - which
@@ -193,7 +193,7 @@ Finally, my can also observe how my agent performs on
 multiple episodes of the game, after having been trained. The
 following is plotted below:
 
-![TestScores](TestScores.PNG)
+![TestScores](TestScores.png)
 
 Broadly speaking, my agent does very well as it plays
 the game. The orange line suggests that its average score is
